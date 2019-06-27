@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav"
+            app:startDestination="@id/historicoFragment">
+
+    <fragment android:id="@+id/historicoFragment" android:name="eduardo.poo.biblioteca.Fragments.HistoricoFragment"
+              android:label="fragment_historico" tools:layout="@layout/fragment_historico">
+        <action android:id="@+id/action_historicoFragment_to_inicialFragment" app:destination="@id/inicialFragment"/>
+    </fragment>
+    <fragment android:id="@+id/inicialFragment" android:name="eduardo.poo.biblioteca.Fragments.InicialFragment"
+              android:label="fragment_inicial" tools:layout="@layout/fragment_inicial"/>
+</navigation>

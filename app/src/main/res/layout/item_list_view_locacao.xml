@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_item"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_locacao"
+        android:layout_marginBottom="12dp">
+
+    <TextView
+            android:text="LIVRO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="10sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="3dp" android:layout_marginTop="4dp"/>
+    <TextView
+            android:text="Título do Exemplar - 99999"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/list_item_exemplar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:textSize="16sp" android:layout_marginTop="24dp"
+            android:layout_marginStart="4dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="4dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/list_item_data_locacao"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/list_item_exemplar"
+            app:layout_constraintStart_toStartOf="parent" android:text="01/31/2019" android:textSize="12sp"
+            android:layout_marginStart="4dp"/>
+    <TextView
+            android:text="12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/list_item_dias_restantes"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/list_item_exemplar" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="4dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

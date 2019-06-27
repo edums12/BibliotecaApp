@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragments.InicialFragment"
+        android:background="@color/colorPrimaryDark">
+
+    <TextView
+            android:text="Informações gerais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="194dp"
+            android:layout_height="109dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:background="@drawable/shape_locacao"
+            android:id="@+id/num_locacoes_layout"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" android:layout_marginTop="8dp">
+
+        <TextView
+                android:text="LOCAÇÕES"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_info_num_locacoes_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:textSize="10sp" android:layout_marginTop="3dp"/>
+        <TextView
+                android:text="16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_numero_locacoes"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/txt_info_num_locacoes_layout"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:textSize="24sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="194dp"
+            android:layout_height="109dp"
+            android:background="@drawable/shape_locacao"
+            android:id="@+id/num_livro_maos_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintTop_toBottomOf="@+id/textView3"
+            android:layout_marginTop="8dp">
+
+        <TextView
+                android:text="NÚMERO LIVROS EM MÃOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_info_num_livro_maos"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="3dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_numero_livros_maos"
+                android:textSize="24sp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_info_num_livro_maos" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
